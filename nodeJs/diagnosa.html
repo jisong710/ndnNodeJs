@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>diagnosa</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
     <style>
-        body{
-  font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
-}
 
 /* container */
 .container {
@@ -37,7 +36,7 @@
 
 /* Right triangle placed top left flush. */
 .tri-right.border.left-top:before {
-  content: url("gambar2.png");
+  content: url("/images/gambar2.png");
   position: absolute;
   width: 0;
   height: 0;
@@ -49,7 +48,7 @@
   border-color: #666 transparent transparent transparent;
 }
 .tri-right.left-top:after{  
-  content: url("gambar2.png");
+  content: url("/images/gambar2.png");
   position: absolute;
   width: 0;
   height: 0;
@@ -75,7 +74,7 @@
   border-color: #666 #666 transparent transparent;
 }
 .tri-right.left-in:after{
-  content: ' ';
+  content: 'Dokter Binatang ';
   position: absolute;
   width: 0;
   height: 0;
@@ -281,22 +280,24 @@
     top: 0px;
     
     background: linear-gradient(180deg, #03265B 0%, rgba(41, 118, 235, 0) 100%);">
-    <img src="gambar.png" style="position: relative;top: 50%;" class="w3-center"></img>
+    <img src="/images/gambar.png" style="position: relative;top: 50%;" class="w3-center"></img>
     <h1 class="w3-center" style="position: relative;top: 50%;">Stevanie</h1>
     <h3 class="w3-center" style="position: relative;top: 50%; color: gray; margin: 0px; padding: 0px;">pasien</h3>
     </header>
     <section class="w3-container" style="position: relative;top: 170px;">
-        <h3 class="w3-left-align">Bandung,Dayeuhkolot</h3>
-        <h3 class="w3-left-align">085730305758</h3>
+        <h4 class="w3-left-align"><i class="fa fa-map-marker" aria-hidden="true" style="color: orangered;"></i> Bandung,Dayeuhkolot</h4>
+        <h4 class="w3-left-align"><i class="fa fa-mobile" aria-hidden="true" style="color: orangered;"></i> 085730305758</h4>
     </section>
     <br>
     <section class="w3-container" style="position: relative;top: 170px;">
-        <button class="w3-button w3-center w3-red" style="width: 100%;">konsultasi</button>
+        <a class="w3-button w3-center w3-red" style="width: 100%;">KONSULTASI</a>
     </section>
     <section class="w3-container" style="position: relative;top: 170px;">
         <table>
             <tr>
-                <div class="talk-bubble tri-right left-top">
+
+                <div class="talk-bubble tri-right left-top" style="border-radius: 10px;">
+                  
                     <div class="talktext">
                       <p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
                     </div>
@@ -312,7 +313,7 @@
     bottom: 0;
     width: 100%;
     text-align: center;">
-        <button class="w3-button" style="width: 100%; color: white;background-color: aqua;">tambah pesanan</button>
+        <a href="/tulissaran/" class="w3-button" style="width: 100%; border-radius: 20px; color: white;background-color: #0C4293;"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambahkan Keluhan Anda</a>
     </section>
 </body>
 </html>

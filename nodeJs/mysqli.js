@@ -7,8 +7,8 @@ function mysqli() {
       password: '',
       database: 'ndn'
     });
-  
     return connection;
-  }
+}
+
 
 export default mysqli;
