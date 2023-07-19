@@ -1,5 +1,5 @@
 // Membuat objek WebSocket
-const socket = new WebSocket('wss://example.com/socket');
+const socket = new WebSocket("wss://scbe.ndntel-u.my.id:9696");
 
 // Menangani event open
 socket.onopen = function() {
